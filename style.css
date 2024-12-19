@@ -382,9 +382,11 @@ CONTACT
 }
 .link {
     color: lightskyblue;
+    text-decoration: none;
 }
 .link:hover {
     color: orange;
+    text-decoration: none;
 }
 
 /*
