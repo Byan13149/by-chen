@@ -472,7 +472,7 @@ MOBILE SIZE
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 90vw;
-
+        align-items: center;
     }
     .btn a {
         max-width: 90%; /* 小屏幕时按钮占满宽度 */
