@@ -475,7 +475,7 @@ MOBILE SIZE
     }
     .btn a {
         max-width: 90%;
-        margin: 0 -1rem 0 0;
+        margin: 0 0 0 -1rem;
     }
     .profile-image {
         width: 35vw;
