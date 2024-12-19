@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/*
+GENERAL STYLING
+================================================ */
+html {
+    font-size: 100%;
+}
+body {
+	color: white;
+	font-family: "Dela Gothic One";
+}
+
+/*
+COMMON
+================================================ */
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+.subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+p {
+    line-height: 1.7;
+    font-size: 1.125rem;
+}
+
+.container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*
+HOME
+================================================ */
+.home {
+    /* background-image: url(../images/astro.png); */
+    text-align: center;
+    padding-top: 10vh;
+    /* background-image: repeating-linear-gradient(0deg, transparent, transparent 4px, rgba(255, 255, 255, .4) 4px, rgba(255, 255, 255, .4) 6px), url(images/astro.png);
+    background-size: auto, cover; */
+    background-color: lightblue;
+    height: 100vh;
+}
+
+/*
+MAIN
+================================================ */
+/* ul li::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f111';
+    color: lightslategray;
+    font-size: 0.8rem;
+    position: center; /* Position relative to the list item
+} */
+.back_btn {
+    text-align: left;
+    margin-top: -5rem;
+    margin-left: -3rem;
+    display: flex;
+    justify-content: left;
+}
+.back_btn a {
+    color: #fff;
+    padding: 8px 16px;
+    background: lightseagreen;
+    /* box-shadow: 0 3px rgb(248, 169, 79); */
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2rem 5rem 2rem;
+    transition: all 0.5s ease;
+}
+.back_btn a:hover {
+    color: #fff;
+    background: rgb(22, 117, 112);
+    box-shadow: 0 0 0 3px lightseagreen;
+    /* border: 2px dashed #eda1a1; */
+}
+.btn {
+    text-align: center;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+}
+.btn a {
+    color: #fff;
+    padding: 8px 16px;
+    background: lightseagreen;
+    /* box-shadow: 0 3px rgb(248, 169, 79); */
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2rem 5rem 2rem;
+    transition: all 0.5s ease;
+}
+.btn a:hover {
+    color: #fff;
+    background: rgb(22, 117, 112);
+    box-shadow: 0 0 0 3px lightseagreen;
+    /* border: 2px dashed #eda1a1; */
+}
+.hr-line-long {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    border-top: 2px solid #807e7e;
+    margin-bottom: 1rem; /* 横线与 "My Interests" 之间的间距 */
+    margin-top: 1rem;
+}
+.hr-line-short {
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    border-top: 2px solid #807e7e;
+    margin-bottom: 1rem; /* 横线与 "My Interests" 之间的间距 */
+    margin-top: 1rem;
+}
+.column {
+    color: #807e7e;
+    text-decoration: none;
+}
+
+/*
+GRID
+================================================ */
+.grid-gallery {
+    /* width: 200px; 宽度为固定值 */
+    /* height: 120px; 高度与宽度相等 */
+    overflow: hidden; /* 隐藏超出部分 */
+    margin: 1rem;
+    display: flex;
+}
+.grid {
+    width: 81vw;
+    margin: 9.5vw;
+    margin-top: 0vh;
+    gap: 2vw;
+    display: grid;
+    grid-template-columns: repeat(3, 27vw);
+    grid-template-rows: repeat(10, 18vw);
+    max-height: 30vh;
+    overflow-y: auto;
+}
+.grid-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(100%);
+    transition: .3s;
+}
+.grid-item:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    z-index: 3;
+    position: relative;
+}
+
+/*
+LIGHTBOX LUMINOUS
+================================================ */
+.lum-lightbox.lum-open {
+    z-index: 4;
+}
+.lum-lightbox-inner img {
+    max-width: 120vw;
+    max-height: 50vh;
+}
+
+
+/*
+MOBILE SIZE
+================================================ */
+@media (max-width: 700px) {
+    .title {
+        font-size: 4rem;
+    }
+    p {
+        padding: 0 1rem;
+    }
+    p,
+    .menu-list li {
+        font-size: 1rem;
+    }
+    .hero {
+        padding-top: 12vh;
+    }
+    .btn {
+        flex-direction: row;
+        /* gap: -10rem; 减小间距 */
+    }
+    .btn a {
+        width: 50%; /* 按钮宽度调整为屏幕的80% */
+        font-size: 0.9rem; /* 缩小字体 */
+        padding: 8px 12px; /* 减小按钮内边距 */
+        margin: 2rem 2rem 2rem;
+    }
+}
