@@ -59,10 +59,10 @@ section {
     min-height: 100vh;
 }
 .with-background {
-    background-image: url('images/chalkboard.jpg'); /* Replace with your image path */
-    background-size: cover; /* Make the image cover the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-image: url('images/chalkboard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 2rem;
     animation: background-animation linear;
     animation-timeline: view();
@@ -174,13 +174,13 @@ SPLIT CONTENTS
     color: orange;
 }
 .right-content a {
-    color: white; /* 设置链接颜色为白色 */
-    text-decoration: none; /* 可选：移除下划线 */
+    color: white;
+    text-decoration: none;
 }
 
 .right-content a:hover {
-    color: orange; /* 悬停时颜色为橙色 */
-    text-decoration: none; /* 可选：悬停时显示下划线 */
+    color: orange;
+    text-decoration: none;
 }
 
 .split-subpage-main {
@@ -285,8 +285,8 @@ UTIL
 .btn a {
     color: white;
     margin: 0rem;
-    padding: 0.3rem 1rem; /* 内边距设置 */
-    flex: 1 1 auto; /* 允许按钮按比例缩放 */
+    padding: 0.3rem 1rem;
+    flex: 1 1 auto;
     text-decoration: none;
     margin: 1rem 1rem;
     flex: 1;
@@ -300,7 +300,7 @@ UTIL
     margin: 0 auto;
     border: none;
     border-top: 2px solid #807e7e;
-    margin-bottom: 1rem; /* 横线与 "My Interests" 之间的间距 */
+    margin-bottom: 1rem;
     margin-top: 1rem;
 }
 .hr-line-short {
@@ -309,7 +309,7 @@ UTIL
     margin: 0 auto;
     border: none;
     border-top: 2px solid #807e7e;
-    margin-bottom: 1rem; /* 横线与 "My Interests" 之间的间距 */
+    margin-bottom: 1rem;
     margin-top: 1rem;
 }
 .highlight {
@@ -381,10 +381,10 @@ CONTACT
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-size: 0.7rem;
-    color: #ffffff; /* White text */
-    background: linear-gradient(to right, #514d4c 34%, #B31B1B 10%); /* Left half grey, right half red */
-    border-radius: 5px; /* Rounded corners */
-    padding: 2px 6px; /* Padding inside the button */
+    color: #ffffff;
+    background: linear-gradient(to right, #514d4c 34%, #B31B1B 10%);
+    border-radius: 5px;
+    padding: 2px 6px;
     height: 1.2rem;
     margin-top: 3px;
 }
@@ -409,7 +409,6 @@ footer {
     color: #615c5b;
 }
 
-/* 引用文 */
 blockquote {
     position: relative;
     padding: 1rem 3rem 1rem 3rem;
@@ -471,12 +470,20 @@ MOBILE SIZE
     .btn {
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 90vw;
+        /* max-width: 90vw; */
         align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
     }
     .btn a {
-        max-width: 90%; /* 小屏幕时按钮占满宽度 */
-        margin: 0rem 0; /* 调整按钮之间的垂直间距 */
+        /* max-width: 90%;
+        margin: 0rem 0; */
+        flex: 0 1 auto;
+        margin: 0.5rem;
+        text-align: center;
+        max-width: none;
     }
     .profile-image {
         width: 35vw;
