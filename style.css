@@ -470,20 +470,12 @@ MOBILE SIZE
     .btn {
         flex-direction: row;
         flex-wrap: wrap;
-        /* max-width: 90vw; */
+        max-width: 90vw;
         align-items: center;
-        justify-content: center;
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
     }
     .btn a {
         max-width: 90%;
-        margin: 0rem 0;
-        /* flex: 0 1 auto;
-        margin: 0.5rem; */
-        text-align: center;
-        /* max-width: none; */
+        margin: 0 -1rem 0 0;
     }
     .profile-image {
         width: 35vw;
