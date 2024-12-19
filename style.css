@@ -160,7 +160,6 @@ SPLIT CONTENTS
 }
 .right-content {
     flex: 1;
-    color: white;
     text-align: center;
 }
 .right-content p {
@@ -169,6 +168,7 @@ SPLIT CONTENTS
     text-align: center;
     font-family: "Nothing You Could Do";
     margin: 0.5rem 0;
+    color: white;
 }
 .right-content p:hover {
     color: orange;
